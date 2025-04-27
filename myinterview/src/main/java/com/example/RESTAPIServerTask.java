@@ -1,5 +1,8 @@
 package com.example;
 
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
 /**
  * This task expects you to create an implementation of a REST API Server.
  * Your code should expose a REST API. 
@@ -9,6 +12,9 @@ package com.example;
  * Be creative!
  *
  */
+@SpringBootApplication
 public class RESTAPIServerTask {
-
+    public static void main(String[] args) {
+        SpringApplication.run(RESTAPIServerTask.class, args);
+    }
 }
